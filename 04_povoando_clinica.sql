@@ -228,3 +228,77 @@ INSERT INTO Vendas VALUES
 (13, '2026-02-13', 180.00, 13, 13, 13, 13),
 (14, '2026-02-14', 70.00, 14, 14, 14, 14),
 (15, '2026-02-15', 65.00, 15, 15, 15, 15);
+
+
+INSERT INTO Cliente VALUES
+(16, 'Paulo Nogueira', '707.707.707-70',
+ '88999990016', 'Rua L, Centro');
+
+
+-- QUESTÕES 4 E 25
+-- Ana Paula passa a possuir 3 animais,
+-- incluindo cães e gatos.
+
+INSERT INTO Animal VALUES
+(16, 'Pipoca', 'Fêmea', 'Siamês', 'Gato'),
+(17, 'Bolt', 'Macho', 'Border Collie', 'Cachorro');
+
+INSERT INTO Possuem VALUES
+(1, 16),
+(1, 17);
+
+
+-- QUESTÕES 13 E 34
+-- Paula Lima fica alocada nas lojas 1 e 2.
+-- Ela já atende o cliente Bruno Lima.
+
+INSERT INTO Alocado VALUES
+(2, 1);
+
+
+-- QUESTÃO 33
+-- Royal Canin passa a possuir 4 produtos,
+-- com preço médio superior à média geral.
+
+INSERT INTO Produto VALUES
+(16, 'Royal Canin', 'Ração', 10.00, 250.00),
+(17, 'Royal Canin', 'Ração', 12.00, 280.00),
+(18, 'Royal Canin', 'Ração', 18.00, 320.00);
+
+
+-- QUESTÃO 30
+-- Ana Paula passa a ter dois serviços.
+
+INSERT INTO Servico VALUES
+(16, 'Banho', 55.00, '2026-01-26', 1, 1, 3);
+
+
+-- QUESTÕES 28 E 37
+-- Loja 1 passa a oferecer todos os
+-- tipos de serviços cadastrados.
+-- Também oferece o produto 2,
+-- que nunca vendeu diretamente.
+
+INSERT INTO Oferece VALUES
+(1, 1, 2),
+(1, 1, 3),
+(1, 1, 4),
+(1, 1, 5),
+(1, 1, 7),
+(1, 1, 8),
+(1, 2, 2);
+
+
+-- QUESTÕES 17, 27 E 30
+-- Loja 1 passa a concentrar mais de 25%
+-- das vendas da rede.
+-- Ana Paula passa a gastar mais de R$ 300.
+-- Paulo Nogueira compra sem contratar serviços.
+
+INSERT INTO Vendas VALUES
+(16, '2026-02-16', 120.00, 1, 1, 1, 1),
+(17, '2026-02-17', 120.00, 1, 1, 1, 1),
+(18, '2026-02-18', 120.00, 1, 1, 1, 1),
+(19, '2026-02-19', 120.00, 1, 1, 1, 1),
+(20, '2026-02-20', 80.00, 2, 2, 2, 16);
+
